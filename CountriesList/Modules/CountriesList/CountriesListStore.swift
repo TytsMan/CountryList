@@ -103,8 +103,6 @@ struct CountriesList {
         return countries
             .filter { country in
                 country.name.contains(searchText)
-                || country.region.contains(searchText)
-                || country.code.contains(searchText)
                 || country.capital.contains(searchText)
             }
     }
