@@ -13,8 +13,8 @@ extension UIView {
         wrapper.addSubview(self)
         snp.makeConstraints { make in
             make.center.equalToSuperview()
-            make.leading.top.greaterThanOrEqualToSuperview()
-            make.trailing.bottom.lessThanOrEqualToSuperview()
+            make.left.top.greaterThanOrEqualToSuperview()
+            make.right.bottom.lessThanOrEqualToSuperview()
         }
         return wrapper
     }
