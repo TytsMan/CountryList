@@ -11,19 +11,24 @@ import SnapKit
 final class CountriesListCell: UITableViewCell {
     
     private lazy var countryNameLabel: UILabel = {
-        UILabel()
-    }()
-    
-    private lazy var regionLabel: UILabel = {
-        UILabel()
+        let label = UILabel()
+        label.font = UIFont.preferredFont(forTextStyle: .title1)
+        label.adjustsFontForContentSizeCategory = true
+        return label
     }()
     
     private lazy var codeLabel: UILabel = {
-        UILabel()
+        let label = UILabel()
+        label.font = UIFont.preferredFont(forTextStyle: .title2)
+        label.adjustsFontForContentSizeCategory = true
+        return label
     }()
     
     private lazy var capitalNameLabel: UILabel = {
-        UILabel()
+        let label = UILabel()
+        label.font = UIFont.preferredFont(forTextStyle: .body)
+        label.adjustsFontForContentSizeCategory = true
+        return label
     }()
     
     // MARK: Init/Lifecycle

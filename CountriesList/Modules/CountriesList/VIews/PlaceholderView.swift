@@ -16,8 +16,18 @@ final class PlaceholderView: UIView {
     }
     
     private lazy var imageView = UIImageView()
-    private lazy var titleLabel = UILabel()
-    private lazy var textLabel = UILabel()
+    private lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.preferredFont(forTextStyle: .title1)
+        label.adjustsFontForContentSizeCategory = true
+        return label
+    }()
+    private lazy var textLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.preferredFont(forTextStyle: .body)
+        label.adjustsFontForContentSizeCategory = true
+        return label
+    }()
     
     init(viewModel: ViewModel) {
         super.init(frame: .zero)
