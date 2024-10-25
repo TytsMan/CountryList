@@ -6,7 +6,7 @@
 //
 
 struct Currency : Decodable, Hashable {
-    let code : String?
-    let name : String?
+    let code : String
+    let name : String
     let symbol : String?
 }
